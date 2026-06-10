@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #1e1e2f;
+    min-height: 100vh;
+    transition: 0.4s;
+    padding: 20px;
+}
+
+#theme-toggle {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 90vh;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    background: #2b2b3c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.equal {
+    grid-column: span 2;
+    background: #ff9800;
+}
+
+.equal:hover {
+    background: #e68900;
+}
+
+.history {
+    width: 280px;
+    min-height: 450px;
+    background: #2b2b3c;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.clear-history,
+#theme-toggle {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.clear-history {
+    background: crimson;
+    color: white;
+    margin-top: 15px;   /* Space above Clear History */
+}
+
+#theme-toggle {
+    background: #ff9800;
+    color: white;
+    margin-top: 12px;   /* Space between the two buttons */
+}
+
+.clear-history:hover {
+    background: darkred;
+}
+
+#theme-toggle:hover {
+    background: #e68900;
+    transform: scale(1.03);
+}
+
+.history ul {
+    list-style: none;
+    flex: 1;
+    max-height: 280px;
+    overflow-y: auto;
+    margin: 15px 0;
+}
+
+.history li {
+    padding: 8px;
+    border-bottom: 1px solid #555;
+    word-break: break-word;
+}
+.history-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;   /* Creates space between buttons */
+}
+
+/* Light Theme */
+
+body.light {
+    background: #f2f2f2;
+}
+
+body.light .calculator,
+body.light .history {
+    background: white;
+    color: black;
+}
+
+body.light button {
+    background: #dddddd;
+    color: black;
+}
+
+body.light button:hover {
+    background: #bbbbbb;
+}
+
+body.light #display {
+    background: #f7f7f7;
+    color: black;
+}
+
+body.light .equal {
+    background: #ff9800;
+    color: white;
+}
+
+body.light .clear-history {
+    background: crimson;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculator,
+    .history {
+        width: 95%;
+    }
+
+    .history {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #display {
+        font-size: 24px;
+        height: 55px;
+    }
+
+    #theme-toggle {
+        width: 100%;
+    }
+}
