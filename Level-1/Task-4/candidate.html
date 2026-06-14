@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Dashboard - JobConnect</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>💼 JobConnect</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="employer.html">Employer</a></li>
+                <li><a href="candidate.html" class="active">Candidate</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <h1>👨‍💻 Candidate Dashboard</h1>
+        <p>Manage your profile and track your job applications.</p>
+    </section>
+
+    <!-- ==================== PROFILE SECTION ==================== -->
+    <section class="dashboard-section">
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <i class="fa-solid fa-user"></i>
+                <h2>Profile</h2>
+                <p>Complete</p>
+            </div>
+
+            <div class="dashboard-card">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <h2>08</h2>
+                <p>Applications Sent</p>
+            </div>
+
+            <div class="dashboard-card">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h2>03</h2>
+                <p>Interview Calls</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CANDIDATE PROFILE ==================== -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>📝 My Profile</h2>
+
+            <form>
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" value="Your Name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" value="yourmail@example.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="tel" value="+91 9876543210">
+                </div>
+
+                <div class="input-group">
+                    <label>Skills</label>
+                    <input type="text"
+                    value="HTML, CSS, JavaScript, Python">
+                </div>
+
+                <div class="input-group">
+                    <label>Career Objective</label>
+                    <textarea rows="5">
+Passionate and motivated fresher seeking opportunities to apply my technical skills and grow as a software developer.
+                    </textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    Save Profile
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== APPLIED JOBS ==================== -->
+    <section class="featured-jobs">
+        <h2 class="section-title">📋 My Applied Jobs</h2>
+
+        <div class="job-container">
+
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p><i class="fa-solid fa-building"></i> Tech Solutions</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+                <p><strong>Status:</strong> 🟢 Under Review</p>
+            </div>
+
+            <div class="job-card">
+                <h3>Python Full Stack Developer</h3>
+                <p><i class="fa-solid fa-building"></i> InnovateX</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bengaluru</p>
+                <p><strong>Status:</strong> 🟡 Application Submitted</p>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p><i class="fa-solid fa-building"></i> DataVision</p>
+                <p><i class="fa-solid fa-location-dot"></i> Remote</p>
+                <p><strong>Status:</strong> 🔵 Interview Scheduled</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== RECOMMENDED JOBS ==================== -->
+    <section class="about">
+        <h2 class="section-title">⭐ Recommended for You</h2>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>React Developer</h3>
+                <p>Based on your JavaScript skills.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL Developer</h3>
+                <p>Perfect for aspiring data professionals.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Python Developer</h3>
+                <p>Great opportunity for freshers.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Analyst</h3>
+                <p>Build your career in analytics.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready for Your Next Opportunity?</h2>
+            <p>
+                Keep your profile updated and apply for jobs that match your skills.
+            </p>
+
+            <a href="jobs.html">
+                <button class="cta-btn">Browse Jobs</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <h2>💼 JobConnect</h2>
+            <p>Helping candidates connect with the right career opportunities.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="employer.html">Employer</a>
+                <a href="candidate.html">Candidate</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="social-icons">
+    <a href="https://www.linkedin.com/in/kolanupakatejasree" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+            <p class="copyright">
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

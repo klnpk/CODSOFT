@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Find Your Dream Job</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>💼 JobConnect</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="employer.html">Employer</a></li>
+                <li><a href="candidate.html">Candidate</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job Today 🚀</h1>
+            <p>
+                Discover thousands of opportunities from top companies.
+                Search, apply, and build your career with JobConnect.
+            </p>
+
+            <div class="search-box">
+                <input type="text"
+                       id="searchInput"
+                       placeholder="Search by job title, company, or skill...">
+
+                <button id="searchBtn">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    Search
+</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED JOBS ==================== -->
+    <section class="featured-jobs">
+        <h2 class="section-title">🔥 Featured Job Openings</h2>
+
+        <div class="job-container">
+
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p><i class="fa-solid fa-building"></i> Tech Solutions Pvt Ltd</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="job-card">
+                <h3>Python Full Stack Developer</h3>
+                <p><i class="fa-solid fa-building"></i> InnovateX</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bengaluru</p>
+                <p><i class="fa-solid fa-briefcase"></i> 0-1 Years</p>
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p><i class="fa-solid fa-building"></i> Creative Labs</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chennai</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p><i class="fa-solid fa-building"></i> DataVision</p>
+                <p><i class="fa-solid fa-location-dot"></i> Remote</p>
+                <p><i class="fa-solid fa-briefcase"></i> 1 Year</p>
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES ==================== -->
+    <section class="categories">
+        <h2 class="section-title">💡 Popular Categories</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Software Development</h3>
+                <p>120+ Openings</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Analytics</h3>
+                <p>85+ Openings</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>60+ Openings</p>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>40+ Openings</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-us">
+        <h2 class="section-title">⭐ Why Choose JobConnect?</h2>
+
+        <div class="features-grid">
+
+            <div class="feature-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Smart Search</h3>
+                <p>Quickly find jobs that match your skills and interests.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <h3>Easy Applications</h3>
+                <p>Apply to jobs with a simple and user-friendly process.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-building"></i>
+                <h3>Top Companies</h3>
+                <p>Connect with leading companies and recruiters.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-laptop-house"></i>
+                <h3>Remote Opportunities</h3>
+                <p>Explore remote and hybrid job opportunities worldwide.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CALL TO ACTION ==================== -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Build Your Career?</h2>
+            <p>
+                Create your profile, upload your resume,
+                and apply for your dream job today.
+            </p>
+
+            <a href="login.html">
+                <button class="cta-btn">Get Started</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <h2>💼 JobConnect</h2>
+            <p>Your trusted platform for connecting talented people with great opportunities.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="employer.html">Employer</a>
+                <a href="candidate.html">Candidate</a>
+                <a href="login.html">Login</a>
+            </div>
+
+           <div class="social-icons">
+    <a href="https://www.linkedin.com/in/kolanupakatejasree" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+            <p class="copyright">
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

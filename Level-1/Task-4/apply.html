@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job - JobConnect</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>💼 JobConnect</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="employer.html">Employer</a></li>
+                <li><a href="candidate.html">Candidate</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <h1>📝 Job Application Form</h1>
+        <p>Complete the details below and submit your application.</p>
+    </section>
+
+    <!-- ==================== APPLICATION FORM ==================== -->
+    <section class="form-section">
+        <div class="form-container">
+
+            <h2>Apply for Frontend Developer</h2>
+
+            <form id="applicationForm">
+
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your mobile number"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="qualification">Highest Qualification</label>
+                    <input
+                        type="text"
+                        id="qualification"
+                        placeholder="B.Tech / BCA / MCA ..."
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="skills">Technical Skills</label>
+                    <input
+                        type="text"
+                        id="skills"
+                        placeholder="HTML, CSS, JavaScript, Python..."
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="experience">Experience</label>
+                    <select id="experience" required>
+                        <option value="">Select Experience</option>
+                        <option>Fresher</option>
+                        <option>0 - 1 Years</option>
+                        <option>1 - 2 Years</option>
+                        <option>2+ Years</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="resume">Upload Resume</label>
+                    <input
+                        type="file"
+                        id="resume"
+                        accept=".pdf,.doc,.docx"
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cover">Cover Letter</label>
+                    <textarea
+                        id="cover"
+                        rows="6"
+                        placeholder="Write a short cover letter..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Submit Application
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- ==================== APPLICATION TIPS ==================== -->
+    <section class="about">
+        <h2 class="section-title">💡 Application Tips</h2>
+
+        <div class="about-grid">
+
+            <div class="about-card">
+                <i class="fa-solid fa-file"></i>
+                <h3>Professional Resume</h3>
+                <p>Keep your resume updated and highlight your projects and skills.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-user-check"></i>
+                <h3>Complete Profile</h3>
+                <p>Fill in all details accurately to improve your chances.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <h3>Write a Cover Letter</h3>
+                <p>Briefly explain why you are a good fit for the role.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Apply Early</h3>
+                <p>Applying early can increase the visibility of your application.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Explore More Opportunities 🚀</h2>
+            <p>
+                Browse more job openings and find the role that matches your career goals.
+            </p>
+
+            <a href="jobs.html">
+                <button class="cta-btn">View More Jobs</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <h2>💼 JobConnect</h2>
+            <p>Your trusted partner for career growth and opportunities.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="employer.html">Employer</a>
+                <a href="candidate.html">Candidate</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="social-icons">
+    <a href="https://www.linkedin.com/in/kolanupakatejasree" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+            <p class="copyright">
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

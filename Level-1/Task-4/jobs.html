@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobConnect - Job Listings</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>💼 JobConnect</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html" class="active">Jobs</a></li>
+                <li><a href="employer.html">Employer</a></li>
+                <li><a href="candidate.html">Candidate</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="page-header">
+        <h1>💼 Explore Job Opportunities</h1>
+        <p>Find the perfect job that matches your skills and career goals.</p>
+    </section>
+
+  
+    <!-- ==================== SEARCH BAR ==================== -->
+<section class="search-section">
+    <div class="search-box">
+        <input type="text"
+               id="searchInput"
+               placeholder="Search for jobs (e.g., Frontend Developer)...">
+
+        <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+    </div>
+</section>
+
+    <!-- ==================== JOB LISTINGS ==================== -->
+    <section class="jobs-list-section">
+
+        <div class="job-container">
+
+            <!-- Job Card 1 -->
+            <div class="job-card" id="frontend-developer">
+                <span class="job-badge">New</span>
+                <h3>Frontend Developer</h3>
+                <p><i class="fa-solid fa-building"></i> Tech Solutions Pvt Ltd</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹4 - ₹6 LPA</p>
+
+                <div class="job-skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card" id="python-full-stack-developer">
+                <span class="job-badge">Hot</span>
+                <h3>Python Full Stack Developer</h3>
+                <p><i class="fa-solid fa-building"></i> InnovateX</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bengaluru</p>
+                <p><i class="fa-solid fa-briefcase"></i> 0-1 Years</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹5 - ₹8 LPA</p>
+
+                <div class="job-skills">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>React</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card" id="ui-ux-designer">
+                <h3>UI/UX Designer</h3>
+                <p><i class="fa-solid fa-building"></i> Creative Labs</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chennai</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹4 - ₹5 LPA</p>
+
+                <div class="job-skills">
+                    <span>Figma</span>
+                    <span>Adobe XD</span>
+                    <span>Prototyping</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 4 -->
+            <div class="job-card" id="data-analyst">
+                <h3>Data Analyst</h3>
+                <p><i class="fa-solid fa-building"></i> DataVision</p>
+                <p><i class="fa-solid fa-location-dot"></i> Remote</p>
+                <p><i class="fa-solid fa-briefcase"></i> 1 Year</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹6 - ₹8 LPA</p>
+
+                <div class="job-skills">
+                    <span>Excel</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 5 -->
+            <div class="job-card" id="java-developer">
+                <span class="job-badge">Remote</span>
+                <h3>Java Developer</h3>
+                <p><i class="fa-solid fa-building"></i> CloudTech</p>
+                <p><i class="fa-solid fa-location-dot"></i> Pune</p>
+                <p><i class="fa-solid fa-briefcase"></i> 1-2 Years</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹6 - ₹9 LPA</p>
+
+                <div class="job-skills">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 6 -->
+            <div class="job-card" id="digital-marketing-executive">
+                <h3>Digital Marketing Executive</h3>
+                <p><i class="fa-solid fa-building"></i> Growth Media</p>
+                <p><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹3 - ₹5 LPA</p>
+
+                <div class="job-skills">
+                    <span>SEO</span>
+                    <span>Google Ads</span>
+                    <span>Social Media</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 7 -->
+            <div class="job-card" id="react-developer">
+                <h3>React Developer</h3>
+                <p><i class="fa-solid fa-building"></i> NextGen Apps</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹5 - ₹7 LPA</p>
+
+                <div class="job-skills">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+            <!-- Job Card 8 -->
+            <div class="job-card" id="software-testing-engineer">
+                <span class="job-badge">Urgent</span>
+                <h3>Software Testing Engineer</h3>
+                <p><i class="fa-solid fa-building"></i> Quality First</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bengaluru</p>
+                <p><i class="fa-solid fa-briefcase"></i> Fresher</p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> ₹4 - ₹6 LPA</p>
+
+                <div class="job-skills">
+                    <span>Manual Testing</span>
+                    <span>Automation</span>
+                    <span>Selenium</span>
+                </div>
+
+                <a href="job-detail.html">
+                    <button>View Details</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Can't Find the Right Job?</h2>
+            <p>
+                Create your profile and receive job recommendations
+                tailored to your skills.
+            </p>
+
+            <a href="login.html">
+                <button class="cta-btn">Create Profile</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <h2>💼 JobConnect</h2>
+            <p>Your trusted platform for finding your dream career.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="employer.html">Employer</a>
+                <a href="candidate.html">Candidate</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="social-icons">
+    <a href="https://www.linkedin.com/in/kolanupakatejasree" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+            <p class="copyright">
+                © 2026 JobConnect. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
